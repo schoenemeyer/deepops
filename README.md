@@ -35,6 +35,14 @@ See the [Deployment Guide](docs/dgx-pod.md) for step-by-step instructions and se
 For more information on deploying DGX in the datacenter, consult the
 [DGX Data Center Reference Design Whitepaper](https://nvidia-gpugenius.highspot.com/viewer/5b33fecf1279587c07d8ac86)
 
+### Proxy Environment
+
+In certain situations, for example on a network where direct Internet access is not allowed and users are required to use a HTTP proxy, you might need to define a custom set of environment variables for Ansible to execute playbooks. The DebOps playbooks allow you to do that using a set of Ansible inventory variables which should be defined as YAML dictionaries:
+
+Please visit:
+https://github.com/debops/debops-playbooks/blob/master/docs/custom-environment.rst
+
+
 ### Virtual
 
 Single-node virtual clusters for testing and customization
